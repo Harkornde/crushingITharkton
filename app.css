@@ -1,0 +1,362 @@
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+
+  :root {
+    --Background: #f1f1f1;
+  }
+
+  body {
+    margin: inherit;
+    padding: inherit;
+    box-sizing: inherit;
+    font-family: "Inter";
+    background: var(--Background, #f1f1f1);
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  /* Navigation Menu */
+
+  nav {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    padding: 0.75rem 0.75rem;
+    align-items: center;
+    gap: 0.5rem;
+    background: black;
+    flex: 1 0 0;
+  }
+
+  #logo a:nth-child(2) {
+    display: none;
+  }
+
+  nav div input {
+    width: 14.875rem;
+    height: 2rem;
+    font-size: 1.25rem;
+  }
+
+  #bell_icon button {
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: none;
+  }
+
+  #search_bar {
+    border: 1px solid #616161;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 13 14" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.82264 10.3833C7.89957 11.0841 6.74835 11.5 5.5 11.5C2.46243 11.5 0 9.03757 0 6C0 2.96243 2.46243 0.5 5.5 0.5C8.53757 0.5 11 2.96243 11 6C11 7.24835 10.5841 8.39957 9.8833 9.32264L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L8.82264 10.3833ZM9.5 6C9.5 8.20914 7.70914 10 5.5 10C3.29086 10 1.5 8.20914 1.5 6C1.5 3.79086 3.29086 2 5.5 2C7.70914 2 9.5 3.79086 9.5 6Z" fill="%23B5B5B5"/></svg>');
+    background-color: #303030;
+    color: #f1f1f1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 1.25rem;
+    border-radius: 0.5rem;
+    background-position: 0.625rem center;
+    text-indent: 0.3125rem;
+  }
+
+  #search_bar::placeholder {
+    font-size: 1.25rem;
+    padding-left: 2.1875rem;
+  }
+
+  #search_bar:focus {
+    background-image: none;
+  }
+
+  #bel_use {
+    display: flex;
+    align-items: center;
+  }
+
+  .user_dash h1 {
+    display: none;
+  }
+
+  .user_dash button {
+    width: 28px;
+    height: 28px;
+    background: #36fba1;
+    font-size: 1rem;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    line-height: 130%;
+    border: none;
+    border-radius: 0.375rem;
+    margin-left: 0.375rem;
+  }
+
+  /* Creating the Nav clicking menu */
+
+  #nav_click {
+    width: 20rem;
+    height: auto;
+    background: #fff;
+    padding: 6px 0px;
+    margin-left: 3rem;
+    border-radius: 14px;
+    position: absolute;
+    margin-top: 12px;
+    z-index: 1;
+    display: none;
+  }
+
+  .davi_col {
+    width: 19.25rem;
+    height: 2.25rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+
+  .davi_profile {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .davi_profile button {
+    width: 28px;
+    height: 28px;
+    background: #36fba1;
+    font-size: 1rem;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    /* line-height: 130%; */
+    border: none;
+    border-radius: 0.375rem;
+  }
+
+  .margin_left {
+    margin-left: 6px;
+    padding: 6px;
+    font-size: 1rem;
+    font-style: normal;
+    color: #303030;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .margin_left button {
+    background: none;
+    border: none;
+    color: #303030;
+  }
+
+  .margin_left button:focus {
+    border: 2px solid #005bd3;
+    padding: 5px;
+    width: 308px;
+    text-align: left;
+    border-radius: 8px;
+  }
+
+  .margin_left button:focus:focus-visible {
+    border: 2px solid #005bd3;
+    padding: 5px;
+    width: 308px;
+    text-align: left;
+    border-radius: 8px;
+  }
+
+  .img_store {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  #nav_click hr {
+    margin-top: calc((12 / 2 * 1px));
+    border: 1px solid #e1e1e1;
+  }
+
+  .user_mail h1 {
+    color: #303030;
+    /* Text-13/medium */
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .user_mail p {
+    color: var(--grey-grey-100, var(--font-mid-2, #616161));
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  /* Creating the notification pop-up */
+    
+
+  /* Plan section/Extending trial */
+  .extension {
+    width: 100vw;
+    height: 6.5rem;
+    margin-top: 1.75rem;
+    padding: 0.75rem 0.5rem 0.75rem 1rem;
+    background: #1a1a1a;
+    color: #e3e3e3;
+  }
+
+  .extension h {
+    display: block;
+    width: 20.625rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .extnd button:nth-child(1) {
+    border: none;
+    background: none;
+    display: block;
+    position: relative;
+    left: 330px;
+    bottom: 10px;
+  }
+
+  .extnd button:nth-child(2) {
+    width: 99px;
+    height: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    display: block;
+    position: relative;
+    bottom: 1rem;
+    background: #fff;
+    box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  @media screen and (min-width: 90em) {
+    /* Navigation Menu */
+
+    nav {
+      padding: 0.75rem 1rem;
+      justify-content: space-between;
+    }
+
+    nav div input {
+      width: 30rem;
+    }
+
+    #logo a:nth-child(2) {
+      display: block;
+    }
+
+    #logo a:nth-child(1) {
+      display: none;
+    }
+
+    #bel_use {
+      gap: 0.5rem;
+    }
+
+    #bell_icon button {
+      width: 2rem;
+      height: 2rem;
+      background: #303030;
+      border-radius: 0.5rem;
+      margin-left: 0;
+    }
+
+    .user_dash {
+      display: flex;
+      width: 11.25rem;
+      gap: 0.5rem;
+      height: 2rem;
+      background: #303030;
+      border-radius: 0.5rem;
+      align-items: center;
+      padding: 0.125rem 0.125rem 0.125rem 0.5rem;
+    }
+
+    .user_dash h1 {
+      font-weight: 500;
+      font-size: 1rem;
+      display: block;
+      color: white;
+    }
+
+    /* desktop toggle */
+    #nav_click {
+      right: 16px;
+    }
+
+    /* Plan section/Extending trial */
+
+    .extension {
+      width: 800px;
+      height: 56px;
+      margin: 2rem auto 1rem;
+      margin-top: 32px;
+      padding: 0.75rem 0.5rem 0.75rem 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .extension h {
+      width: auto;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 140%;
+    }
+
+    .extnd {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 10px;
+      margin-right: 20px;
+    }
+
+    .extnd button:nth-child(1) {
+      border: none;
+      background: none;
+      display: block;
+      position: static;
+      left: 340px;
+      bottom: 30px;
+    }
+
+    .extnd button:nth-child(2) {
+      width: 99px;
+      height: 28px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      display: block;
+      position: static;
+      bottom: 1rem;
+      background: #fff;
+      box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
+      font-size: 0.85rem;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+}
